@@ -1,0 +1,118 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Tipografía y base */
+
+body {
+    font-family: "BBH Bogle", system-ui, sans-serif;
+    line-height: 1.6;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 40px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+/* Contenedor del menú */
+ul {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 12px;
+}
+
+/* Ítems */
+li {
+    position: relative;
+}
+
+/* Enlaces */
+a {
+    text-decoration: none;
+    color: #ffcbbe;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-transform: lowercase;
+    padding: 6px 0;
+    transition: color 0.2s ease;
+}
+
+/* Hover sobrio */
+a:hover {
+    color: #e14949ff;
+}
+
+/* Línea inferior elegante */
+a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background-color: #e14949ff;
+    transition: width 0.25s ease;
+}
+
+a:hover::after {
+    width: 100%;
+}
+hr {
+  color: #e14949ff
+}
+h1 {
+  color: rgb(231, 207, 207)
+}
+h2 {
+  color:  rgb(247, 228, 224)
+}
+/* Formulario */
+
+form {
+    margin-top: 50px;
+    padding: 30px;
+    background-color: var(--color-blanco);
+    border: var(--borde-suave);
+    border-radius: 8px;
+    max-width: 500px;
+}
+
+/* Inputs */
+.nombre {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 15px;
+    border: var(--borde-suave);
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-family: inherit;
+}
+
+.nombre:focus {
+    outline: none;
+    border-color: var(--color-acento);
+}
+
+/* Botón */
+.boton {
+    width: 100%;
+    padding: 12px;
+    background-color: #eb3232;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.boton:hover {
+    background-color: #fffff0;
+}

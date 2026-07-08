@@ -1,0 +1,113 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables: orden y coherencia */
+
+/* Títulos */
+h1 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: var(--color-secundario);
+    letter-spacing: -0.5px;
+}
+
+h2 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: var(--color-secundario);
+    margin: 20px 0;
+}
+
+/* Imagen principal */
+img {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: 30px auto;
+    border-radius: 6px;
+}
+
+/* Texto */
+p {
+    margin: 15px 0;
+    color: var(--color-secundario);
+}
+
+/* Lista */
+ul {
+    margin: 15px 0 25px 20px;
+}
+
+li {
+    margin-bottom: 8px;
+    color: var(--color-secundario);
+}
+
+/* Enlaces */
+a {
+    color: var(--color-acento);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Formulario */
+form {
+    margin-top: 50px;
+    padding: 30px;
+    background-color: var(--color-blanco);
+    border: var(--borde-suave);
+    border-radius: 8px;
+    max-width: 500px;
+}
+
+/* Inputs */
+.nombre {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 15px;
+    border: var(--borde-suave);
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-family: inherit;
+}
+
+.nombre:focus {
+    outline: none;
+    border-color: var(--color-acento);
+}
+
+/* Botón */
+.boton {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+    border: none;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.boton:hover {
+    background-color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    body {
+        padding: 25px 15px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+}
